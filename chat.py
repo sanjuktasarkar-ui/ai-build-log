@@ -24,7 +24,7 @@ while True:
     )
 
     reply = "".join(b.text for b in resp.content if b.type == "text")
-    # history.append({"role": "assistant", "content": "12345678"}) 
+    history.append({"role": "assistant", "content": reply}) 
     print(history)
     print(f"\nclaude> {reply}")
     print(f"[in: {resp.usage.input_tokens}  out: {resp.usage.output_tokens}]")
