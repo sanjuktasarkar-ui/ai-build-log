@@ -12,4 +12,4 @@ resp = client.messages.create(
 )
 
 print(resp.content[0].text)
-print(f"\nin: {resp.usage.input_tokens}  out: {resp.usage.output_tokens}")
+print(f"\nin: {resp.usage.input_tokens}  out: {resp.usage.output_tokens}")git
